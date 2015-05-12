@@ -1,59 +1,97 @@
-.navbar
-    .navbar-container
-        .navbar-logo <!-- svg background -->
-        .navbar-links
-            ul
-                li 
-                    a PROJECTS
-                li
-                    a ABOUT
-        .navbar-social
-            ul
-                li
-                    img.social-icon(src="img/social-icon-twitter.png")
-                li
-                    img.social-icon(src="img/social-icon-facebook.png")
+doctype html
+html(lang="en")
+    head
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="content-type", content="text/html; charset=utf-8")
+        link(rel="stylesheet", href="css/main.css", media="all")
+        script(src="//use.typekit.net/vxq2qyv.js")
+        script.
+            try{Typekit.load();}catch(e){}
 
-.home-masthead
-    .masthead-overlay
-    .masthead-controls
-        ul
-            li
-                a ART
-            li
-                p +
-            li
-                a DESIGN
-            li
-                p +
-            li
-                a EXECUTION
+    body
+        .navbar
+            .navbar-container
+                .navbar-logo <!-- svg background -->
+                .navbar-links
+                    ul
+                        li 
+                            a WORK
+                        li
+                            a ABOUT
+                .navbar-social
+                    ul
+                        li
+                            img.social-icon(src="img/social-icon-twitter.png")
+                        li
+                            img.social-icon(src="img/social-icon-linkedin.png")
+                        li
+                            img.social-icon(src="img/social-icon-github.png")
 
-.home-main
-    .home-project
-        .project-image <!-- background image -->
-            .project-image-overlay
-                a Learn More »
-        .project-h2 Art, Design, Execution
-        .project-h1 Project Name
+        .masthead
+            .masthead-overlay
+            .masthead-controls
+                ul
+                    li
+                        a ART
+                    li
+                        p +
+                    li
+                        a DESIGN
+                    li
+                        p +
+                    li
+                        a EXECUTION
+                p.
+                    Click to filter projects
+
+        .main
+            .home-project
+                .project-image <!-- background image -->
+                    .project-image-overlay
+                        a Learn More »
+                .project-h2 Art, Design, Execution
+                .project-h1 Project Name
+            
+            .home-project
+                .project-image <!-- background image -->
+                    .project-image-overlay
+                        a Learn More »
+                .project-h2 Art, Design, Execution
+                .project-h1 Project Name
+            
+            .home-project
+                .project-image <!-- background image -->
+                    .project-image-overlay
+                        a Learn More »
+                .project-h2 Art, Design, Execution
+                .project-h1 Project Name
+            
+            .home-project
+                .project-image <!-- background image -->
+                    .project-image-overlay
+                        a Learn More »
+                .project-h2 Art, Design, Execution
+                .project-h1 Project Name
     
-.modal-container
-    .modal-masthead
-    .modal-main
-        .modal-head
-            a Close
-            img.project-icon(src="img/<Project Name>-icon.png")
-            h2 Art, Design, Execution
-            h1 Project Name
-        p
-        .modal-gallery
-            .gallery-image <!-- background image -->
-            .gallery-image <!-- background image -->
-            .gallery-image <!-- background image -->
-        p
-        .modal-footer
-            a Back to Projects
+        .modal-container
+            .masthead
+            .main
+                .modal-head
+                    a &times; Close
+                    img.project-icon(src="img/<Project Name>-icon.png")
+                    h2 Art, Design, Execution
+                    h1 Project Name
+                p.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur eros vel mi lacinia consequat. Vestibulum sit amet tempor urna. Sed fringilla, ex eu blandit tincidunt, eros velit faucibus nisl, sit amet imperdiet nunc purus sit amet risus. Sed dapibus ex porta, lacinia dui quis, accumsan nunc. ABOUT
+                .modal-gallery
+                    .gallery-image <!-- background image -->
+                    .gallery-image <!-- background image -->
+                    .gallery-image <!-- background image -->
+                p.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur eros vel mi lacinia consequat. Vestibulum sit amet tempor urna. Sed fringilla, ex eu blandit tincidunt, eros velit faucibus nisl, sit amet imperdiet nunc purus sit amet risus. Sed dapibus ex porta, lacinia dui quis, accumsan nunc. ABOUT
+                .modal-footer
+                    a &laquo; Back to Projects
 
-footer
-    p.footer.
-        Made in <texas> with <heart>
+        footer
+            p.footer.
+                Made in <span class="tx">q</span> with ♥
