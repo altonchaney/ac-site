@@ -108,6 +108,9 @@ a:hover {
   margin: 0;
   color: white;
 }
+.masthead > .masthead-controls > ul > li > a:hover {
+  opacity: 1;
+}
 .masthead > .masthead-controls > ul > li > p {
   margin: 0;
 }
