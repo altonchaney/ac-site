@@ -4,6 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="css/main.css" media="all">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
     <script src="//use.typekit.net/vxq2qyv.js"></script>
     <script>
       try{Typekit.load();}catch(e){}
@@ -16,15 +19,15 @@
         <div class="navbar-logo"><!-- svg background --></div>
         <div class="navbar-links">
           <ul>
-            <li> <a>WORK</a></li>
-            <li><a>ABOUT</a></li>
+            <li> <a href="#" class="active">WORK</a></li>
+            <li><a href="#">ABOUT</a></li>
           </ul>
         </div>
         <div class="navbar-social">
           <ul>
-            <li><img src="img/social-icon-twitter.png" class="social-icon"></li>
-            <li><img src="img/social-icon-linkedin.png" class="social-icon"></li>
-            <li><img src="img/social-icon-github.png" class="social-icon"></li>
+            <li><a href="#"><img src="img/social-icon-twitter.png" class="social-icon"></a></li>
+            <li><a href="#"><img src="img/social-icon-linkedin.png" class="social-icon"></a></li>
+            <li><a href="#"><img src="img/social-icon-github.png" class="social-icon"></a></li>
           </ul>
         </div>
       </div>
@@ -33,15 +36,15 @@
       <div class="masthead-overlay"></div>
       <div class="masthead-controls">
         <ul>
-          <li><a>ART</a></li>
+          <li><a href="#" class="selector-art">ART</a></li>
           <li>
             <p>+</p>
           </li>
-          <li><a>DESIGN</a></li>
+          <li><a href="#" class="selector-design">DESIGN</a></li>
           <li>
             <p>+</p>
           </li>
-          <li><a>EXECUTION</a></li>
+          <li><a href="#" class="selector-execution">EXECUTION</a></li>
         </ul>
         <p>
           Click to filter projects
@@ -49,55 +52,60 @@
         </p>
       </div>
     </div>
-    <div class="main">
-      <div class="home-project">
+    <div class="main home">
+      <div class="home-project design">
         <div class="project-image"><!-- background image -->
-          <div class="project-image-overlay"><a>Learn More »</a></div>
+          <div class="project-image-overlay"><a id="open-project1" href="#">Learn More »</a></div>
         </div>
         <div class="project-h2">Art, Design, Execution</div>
         <div class="project-h1">Project Name</div>
       </div>
-      <div class="home-project">
+      <div class="home-project execution">
         <div class="project-image"><!-- background image -->
-          <div class="project-image-overlay"><a>Learn More »</a></div>
+          <div class="project-image-overlay"><a href="#">Learn More »</a></div>
         </div>
         <div class="project-h2">Art, Design, Execution</div>
         <div class="project-h1">Project Name</div>
       </div>
-      <div class="home-project">
+      <div class="home-project art">
         <div class="project-image"><!-- background image -->
-          <div class="project-image-overlay"><a>Learn More »</a></div>
+          <div class="project-image-overlay"><a href="#">Learn More »</a></div>
         </div>
         <div class="project-h2">Art, Design, Execution</div>
         <div class="project-h1">Project Name</div>
       </div>
-      <div class="home-project">
+      <div class="home-project art design">
         <div class="project-image"><!-- background image -->
-          <div class="project-image-overlay"><a>Learn More »</a></div>
+          <div class="project-image-overlay"><a href="#">Learn More »</a></div>
         </div>
         <div class="project-h2">Art, Design, Execution</div>
         <div class="project-h1">Project Name</div>
       </div>
+      <footer>
+        <p class="footer">
+          © 1989-2015 Alton Chaney | Made in <a href="#"><span class="tx">q</span></a> with <a href="#">♥</a>
+          
+        </p>
+      </footer>
     </div>
-    <div class="modal-container">
+    <div id="modal-project1" class="modal-container">
       <div class="masthead"></div>
       <div class="main">
-        <div class="modal-head"><a>&times; Close</a><img src="img/&lt;Project Name&gt;-icon.png" class="project-icon">
+        <div class="modal-head"><a href="#" class="modal-close">&times; Close</a><img src="img/&lt;Project Name&gt;-icon.png" class="project-icon">
           <h2>Art, Design, Execution</h2>
           <h1>Project Name</h1>
         </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur eros vel mi lacinia consequat. Vestibulum sit amet tempor urna. Sed fringilla, ex eu blandit tincidunt, eros velit faucibus nisl, sit amet imperdiet nunc purus sit amet risus. Sed dapibus ex porta, lacinia dui quis, accumsan nunc. ABOUT</p>
         <div class="modal-gallery">
-          <div class="gallery-image"><!-- background image --></div>
-          <div class="gallery-image"><!-- background image --></div>
-          <div class="gallery-image"><!-- background image --></div>
+          <div id="image-project1a" class="gallery-image"><!-- background image --></div>
+          <div id="image-project1b" class="gallery-image"><!-- background image --></div>
+          <div id="image-project1c" class="gallery-image"><!-- background image --></div>
         </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur eros vel mi lacinia consequat. Vestibulum sit amet tempor urna. Sed fringilla, ex eu blandit tincidunt, eros velit faucibus nisl, sit amet imperdiet nunc purus sit amet risus. Sed dapibus ex porta, lacinia dui quis, accumsan nunc. ABOUT</p>
-        <div class="modal-footer"><a>&laquo; Back to Projects</a></div>
+        <div class="modal-footer"><a href="#" class="modal-close">Back to Projects</a>
+          <hr>
+        </div>
       </div>
     </div>
-    <footer>
-      <p class="footer">Made in <span class="tx">q</span> with ♥</p>
-    </footer>
   </body>
 </html>

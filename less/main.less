@@ -23,9 +23,16 @@ body {
 	font-family: @font-sans;
 	font-size: @font-size3;
 	color: @color-darkgray;
+	background: #f5f5f5;
 	margin: 0;
 	padding: 0;
 	top: 0;
+}
+
+a {
+	text-decoration: none;
+	transition: 0.3s;
+	&:hover { opacity: .8; }
 }
 
 .navbar {
@@ -60,7 +67,7 @@ body {
                     	font-weight: @font-light;
                     	color: @color-gray;
                     	font-size: @font-size4;
-                    	&:active {
+                    	&.active {
                     		font-weight: @font-semibold;
                     	}
                     }
@@ -76,10 +83,12 @@ body {
                 > li {
                 	float: right;
                 	margin-left: 20px;
-                    > img.social-icon {
-                    	width: 30px;
-                    	height: 30px;
-                    }
+                	> a {
+						> img.social-icon {
+							width: 30px;
+							height: 30px;
+						}
+					}
                 }
             }
         }
@@ -118,6 +127,7 @@ body {
             	letter-spacing: 1.5px;
                 > a {
                 	margin: 0;
+                	color: white;
                 }
                 > p {
                 	margin: 0;
@@ -188,12 +198,16 @@ body {
 }
     
 .modal-container {
+	display: none;
 	z-index: 200;
 	background-color: #f5f5f5;
-//	position: absolute;
-//	top: 60px;
+	position: absolute;
+	top: 60px;
 	width: 100%;
-    > .masthead {}
+	border-bottom: 1px solid @color-lightgray;
+    > .masthead {
+    	background-color: red;
+    }
     > .main {
         > .modal-head {
         	text-align: center;
@@ -249,7 +263,17 @@ body {
             }
         }
         > .modal-footer {
-            > a {}
+        	text-align: center;
+        	margin-bottom: 40px;
+            > a {
+            	color: @color-darkgray;
+            }
+            
+            > hr {
+            	border: none;
+            	border-bottom: 1px solid @color-darkgray;
+            	width: 60px;
+            }
         }
     }
 }
@@ -262,8 +286,11 @@ footer {
 	font-size: @font-size2;
 	color: @color-lightgray;
 	height: 100px;
+	clear: both;
     > p.footer {
-    	padding-top: 32px;
-    	> a {}
+    	padding-top: 40px;
+    	> a {
+    		color: @color-gray;
+    	}
     }
 }
