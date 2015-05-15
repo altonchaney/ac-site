@@ -35,6 +35,8 @@ a {
 	&:hover { opacity: .8; }
 }
 
+::-webkit-scrollbar {display: none;}
+
 .navbar {
 	width: 100%;
 	height: 60px;
@@ -43,8 +45,9 @@ a {
     > .navbar-container {
     	width: 100%;
     	height: 100%;
-    	max-width: 760px;
+    	max-width: 680px;
     	margin: 0 auto;
+    	padding: 0 40px;
         > .navbar-logo {
         	background-image: url("../img/logo.svg");
         	background-position: center;
@@ -297,3 +300,5 @@ footer {
     	}
     }
 }
+
+@import "mobile.less";

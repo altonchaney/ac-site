@@ -15,6 +15,9 @@ a {
 a:hover {
   opacity: .8;
 }
+::-webkit-scrollbar {
+  display: none;
+}
 .navbar {
   width: 100%;
   height: 60px;
@@ -24,8 +27,9 @@ a:hover {
 .navbar > .navbar-container {
   width: 100%;
   height: 100%;
-  max-width: 760px;
+  max-width: 680px;
   margin: 0 auto;
+  padding: 0 40px;
 }
 .navbar > .navbar-container > .navbar-logo {
   background-image: url("../img/logo.svg");
@@ -265,4 +269,79 @@ footer > p.footer {
 }
 footer > p.footer > a {
   color: #626566;
+}
+@media screen and (max-width: 760px) {
+  .navbar {
+    height: 90px;
+  }
+  .navbar > .navbar-container {
+    padding: 0;
+    height: 90px;
+    background-position: bottom;
+  }
+  .navbar > .navbar-container > .navbar-logo {
+    float: none;
+    margin: 0 auto;
+    max-height: 56px;
+  }
+  .navbar > .navbar-container > .navbar-links > ul {
+    padding: 0;
+    text-align: center;
+  }
+  .navbar > .navbar-container > .navbar-links > ul > li {
+    display: inline;
+    float: none;
+    text-align: center;
+    margin: 0 20px;
+  }
+  .navbar > .navbar-container > .navbar-social {
+    display: none;
+  }
+  .masthead {
+    height: 180px;
+  }
+  .masthead > .masthead-controls > ul > li {
+    float: none;
+  }
+  .masthead > .masthead-controls > ul > li > p {
+    font-size: 18px;
+  }
+  .masthead > .masthead-controls > p {
+    margin-top: 10px;
+  }
+  .main {
+    width: 100%;
+  }
+  .main > .home-project {
+    width: 100%;
+    max-width: 260px;
+    margin: 40px auto 0;
+    padding-bottom: 10px;
+    float: none;
+  }
+  .main > .home-project > .project-image {
+    width: 100%;
+    height: 120px;
+  }
+  .main > .home-project > .project-image > .project-image-overlay {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .main > .home-project > .project-image > .project-image-overlay > a {
+    opacity: 1;
+    color: #999999;
+    top: 154%;
+  }
+  .modal-container {
+    top: 90px;
+  }
+  .modal-container > .main > .modal-head,
+  .modal-container > .main p,
+  .modal-container > .main .modal-gallery {
+    padding: 0 20px;
+  }
+  .modal-container > .main > .modal-gallery > .gallery-image {
+    float: none;
+    margin: 0 auto 30px;
+  }
 }
