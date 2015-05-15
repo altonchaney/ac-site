@@ -351,3 +351,23 @@ footer > p.footer > a {
     margin: 0 auto 30px;
   }
 }
+.modal-container#virtualtryon > .masthead {
+  background-image: url('');
+  background-size: cover;
+  background-position: center;
+}
+.modal-container#virtualtryon > .main > .modal-gallery > .gallery-image#virtualtryona {
+  background-image: url('');
+  background-size: cover;
+  background-position: center;
+}
+.modal-container#virtualtryon > .main > .modal-gallery > .gallery-image#virtualtryonb {
+  background-image: url('');
+  background-size: cover;
+  background-position: center;
+}
+.modal-container#virtualtryon > .main > .modal-gallery > .gallery-image#virtualtryonc {
+  background-image: url('');
+  background-size: cover;
+  background-position: center;
+}
