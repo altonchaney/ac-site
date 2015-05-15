@@ -1,0 +1,48 @@
+doctype html
+html(lang="en")
+    head
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="content-type", content="text/html; charset=utf-8")
+        link(rel="stylesheet", href="css/main.css", media="all")
+        script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js")
+        script(src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js")
+        script(src="//use.typekit.net/vxq2qyv.js")
+        script.
+            try{Typekit.load();}catch(e){}
+
+    body
+        .navbar
+            .navbar-container
+                .navbar-logo <!-- svg background -->
+                .navbar-links
+                    ul
+                        li 
+                            a(href="index.html") WORK
+                        li
+                            a.active(href="about.html") ABOUT
+                .navbar-social
+                    ul
+                        li
+                            a(href="#")
+                                img.social-icon(src="img/social-icon-twitter.png")
+                        li
+                            a(href="#")
+                                img.social-icon(src="img/social-icon-linkedin.png")
+                        li
+                            a(href="#")
+                                img.social-icon(src="img/social-icon-github.png")
+        
+        .modal-container#about-me
+            .masthead
+            .main
+                .modal-head
+                    img.project-icon(src="img/<Project Name>-icon.png")
+                    h2 Dreamer, Artist, Maker
+                    h1 An Introduction
+                p.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur eros vel mi lacinia consequat. Vestibulum sit amet tempor urna. Sed fringilla, ex eu blandit tincidunt, eros velit faucibus nisl, sit amet imperdiet nunc purus sit amet risus. Sed dapibus ex porta, lacinia dui quis, accumsan nunc. ABOUT
+                p.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur eros vel mi lacinia consequat. Vestibulum sit amet tempor urna. Sed fringilla, ex eu blandit tincidunt, eros velit faucibus nisl, sit amet imperdiet nunc purus sit amet risus. Sed dapibus ex porta, lacinia dui quis, accumsan nunc. ABOUT
+                footer.about
+                    p.footer.
+                        © 1989-2015 Alton Chaney | Made in <a href="#"><span class="tx">q</span></a> with <a href="#">♥</a>

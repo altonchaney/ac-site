@@ -186,6 +186,9 @@ a:hover {
   width: 100%;
   border-bottom: 1px solid #999999;
 }
+.modal-container#about-me {
+  display: block;
+}
 .modal-container > .masthead {
   background-color: red;
 }
@@ -263,6 +266,9 @@ footer {
   color: #999999;
   height: 100px;
   clear: both;
+}
+footer.about {
+  height: 60px;
 }
 footer > p.footer {
   padding-top: 40px;
