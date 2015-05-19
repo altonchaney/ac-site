@@ -8,7 +8,16 @@ $(document).ready(function() {
         });
     }
     
-    $('#open-project1').click(function(){ showModal('project1') });
+    $('#open-virtualtryon').click(function(){ showModal('virtualtryon') });
+    $('#open-backwords').click(function(){ showModal('backwords') });
+    $('#open-ww2timeline').click(function(){ showModal('ww2timeline') });
+    $('#open-tgpio').click(function(){ showModal('tgpio') });
+    $('#open-planetkungfu').click(function(){ showModal('planetkungfu') });
+    $('#open-olympicgames').click(function(){ showModal('olympicgames') });
+    $('#open-urbansprawl').click(function(){ showModal('urbansprawl') });
+    $('#open-socialtvinfographs').click(function(){ showModal('socialtvinfographs') });
+    $('#open-gameoverride').click(function(){ showModal('gameoverride') });
+    $('#open-iconcollages').click(function(){ showModal('iconcollages') });
     
     $('.modal-close').click(function(){ 
     	$('.modal-container').fadeOut(300, function(){
