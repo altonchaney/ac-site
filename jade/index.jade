@@ -3,6 +3,8 @@ html(lang="en")
     head
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="content-type", content="text/html; charset=utf-8")
+        title Alton Chaney, Art + Design + Execution
+        meta(name="description", content="Selected works from the mind and fingertips of Alton Chaney")
         link(rel="stylesheet", href="css/main.css", media="all")
         script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js")
         script(src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js")
@@ -24,13 +26,13 @@ html(lang="en")
                 .navbar-social
                     ul
                         li
-                            a(href="#")
+                            a(href="https://twitter.com/altonchaney", target="_blank")
                                 img.social-icon(src="img/social-icon-twitter.png")
                         li
-                            a(href="#")
+                            a(href="https://www.linkedin.com/in/altonchaney", target="_blank")
                                 img.social-icon(src="img/social-icon-linkedin.png")
                         li
-                            a(href="#")
+                            a(href="https://github.com/altonchaney", target="_blank")
                                 img.social-icon(src="img/social-icon-github.png")
 
         .masthead
@@ -51,35 +53,87 @@ html(lang="en")
                     Click to filter projects
 
         .main.home
-            .home-project.design
-                .project-image <!-- background image -->
+            .home-project.art.design
+                .project-image#virtualtryon <!-- background image -->
                     .project-image-overlay
-                        a#open-project1(href="#") Learn More »
-                .project-h2 Art, Design, Execution
-                .project-h1 Project Name
-            
-            .home-project.execution
-                .project-image <!-- background image -->
-                    .project-image-overlay
-                        a(href="#") Learn More »
-                .project-h2 Art, Design, Execution
-                .project-h1 Project Name
-            
-            .home-project.art
-                .project-image <!-- background image -->
-                    .project-image-overlay
-                        a(href="#") Learn More »
-                .project-h2 Art, Design, Execution
-                .project-h1 Project Name
+                        a#open-virtualtryon(href="#") Learn More »
+                .project-h2 Art, Design
+                .project-h1 Virtual Try-On
             
             .home-project.art.design
-                .project-image <!-- background image -->
+                .project-image#backwords <!-- background image -->
                     .project-image-overlay
-                        a(href="#") Learn More »
+                        a#open-backwords(href="#") Learn More »
+                .project-h2 Art, Design
+                .project-h1 Backwords
+            
+            .home-project.art.design.execution
+                .project-image#ww2timeline <!-- background image -->
+                    .project-image-overlay
+                        a#open-ww2timeline(href="#") Learn More »
                 .project-h2 Art, Design, Execution
-                .project-h1 Project Name
+                .project-h1 WW2 Media Timeline
+            
+            .home-project.art.design.execution
+                .project-image#tgpio <!-- background image -->
+                    .project-image-overlay
+                        a#open-tgpio(href="#") Learn More »
+                .project-h2 Art, Design, Execution
+                .project-h1 tgp.io
+            
+            .home-project.art.design
+                .project-image#planetkungfu <!-- background image -->
+                    .project-image-overlay
+                        a#open-planetkungfu(href="#") Learn More »
+                .project-h2 Art, Design
+                .project-h1 Planet Kung Fu
+            
+            .home-project.art.design
+                .project-image#olympicgames <!-- background image -->
+                    .project-image-overlay
+                        a#open-olympicgames(href="#") Learn More »
+                .project-h2 Art, Design
+                .project-h1 Olympic Games
+                
+            .home-project.art.design
+                .project-image#urbansprawl <!-- background image -->
+                    .project-image-overlay
+                        a#open-urbansprawl(href="#") Learn More »
+                .project-h2 Art, Design
+                .project-h1 Urban Sprawl
+            
+            .home-project.art.design
+                .project-image#socialtvinfographs <!-- background image -->
+                    .project-image-overlay
+                        a#open-socialtvinfographs(href="#") Learn More »
+                .project-h2 Art, Design
+                .project-h1 Social TV Infographs
+            
+            .home-project.art.design.execution
+                .project-image#gameoverride <!-- background image -->
+                    .project-image-overlay
+                        a#open-gameoverride(href="#") Learn More »
+                .project-h2 Art, Design, Execution
+                .project-h1 Game Override
+            
+            .home-project.art
+                .project-image#iconcollages <!-- background image -->
+                    .project-image-overlay
+                        a#open-iconcollages(href="#") Learn More »
+                .project-h2 Art
+                .project-h1 Icon Collages
+            
             footer
                 p.footer.
                     © 1989-2015 Alton Chaney | Made in <a href="#"><span class="tx">q</span></a> with <a href="#">♥</a>
         
-        include project1.jade
+        include 01-virtualtryon.jade
+        include 02-backwords.jade
+        include 03-ww2timeline.jade
+        include 04-tgpio.jade
+        include 05-planetkungfu.jade
+        include 06-olympicgames.jade
+        include 07-urbansprawl.jade
+        include 08-socialtvinfographs.jade
+        include 09-gameoverride.jade
+        include 10-iconcollages.jade
