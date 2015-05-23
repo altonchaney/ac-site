@@ -19,11 +19,24 @@ $(document).ready(function() {
     $('#open-gameoverride').click(function(){ showModal('gameoverride') });
     $('#open-iconcollages').click(function(){ showModal('iconcollages') });
     
+    $('#virtualtryon').click(function(){ showModal('virtualtryon') });
+    $('#backwords').click(function(){ showModal('backwords') });
+    $('#ww2timeline').click(function(){ showModal('ww2timeline') });
+    $('#tgpio').click(function(){ showModal('tgpio') });
+    $('#planetkungfu').click(function(){ showModal('planetkungfu') });
+    $('#olympicgames').click(function(){ showModal('olympicgames') });
+    $('#urbansprawl').click(function(){ showModal('urbansprawl') });
+    $('#socialtvinfographs').click(function(){ showModal('socialtvinfographs') });
+    $('#gameoverride').click(function(){ showModal('gameoverride') });
+    $('#iconcollages').click(function(){ showModal('iconcollages') });
+    
     $('.modal-close').click(function(){ 
     	$('.modal-container').fadeOut(300, function(){
 			$('.main.home').fadeIn(300);
         })
     });
+    
+    
     
     function filterProjects(type){
         var $projectType = $('.home-project.'+type);

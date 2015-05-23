@@ -1,0 +1,25 @@
+.modal-container#modal-olympicgames > .masthead {
+  background-image: url('../img/olympicgames-banner.png');
+  background-size: cover;
+  background-position: center;
+}
+.modal-container#modal-olympicgames > .main > .modal-gallery > .gallery-image#image-olympicgamesa {
+  background-image: url('../img/olympicgames-gallerya.png');
+  background-size: cover;
+  background-position: center;
+}
+.modal-container#modal-olympicgames > .main > .modal-gallery > .gallery-image#image-olympicgamesb {
+  background-image: url('../img/olympicgames-galleryb.png');
+  background-size: cover;
+  background-position: center;
+}
+.modal-container#modal-olympicgames > .main > .modal-gallery > .gallery-image#image-olympicgamesc {
+  background-image: url('../img/olympicgames-galleryc.png');
+  background-size: cover;
+  background-position: center;
+}
+.main > .home-project > .project-image#olympicgames {
+  background-image: url('../img/olympicgames-project.png');
+  background-size: cover;
+  background-position: center;
+}

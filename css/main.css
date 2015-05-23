@@ -68,7 +68,7 @@ a:hover {
 }
 .navbar > .navbar-container > .navbar-social > ul > li {
   float: right;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 .navbar > .navbar-container > .navbar-social > ul > li > a > img.social-icon {
   width: 30px;
@@ -80,6 +80,11 @@ a:hover {
   display: table;
   z-index: 110;
   background-color: blue;
+}
+.masthead.home {
+  background-image: url('../img/home-banner.png');
+  background-size: cover;
+  background-position: center;
 }
 .masthead > .masthead-overlay {
   width: 100%;
@@ -147,6 +152,7 @@ a:hover {
 }
 .main > .home-project > .project-image > .project-image-overlay {
   position: relative;
+  pointer-event: none;
   top: 0;
   left: 0;
   width: 100%;
@@ -192,6 +198,11 @@ a:hover {
 .modal-container > .masthead {
   background-color: red;
 }
+.modal-container > .masthead.about {
+  background-image: url('../img/about-banner.png');
+  background-size: cover;
+  background-position: center;
+}
 .modal-container > .main > .modal-head {
   text-align: center;
 }
@@ -208,7 +219,8 @@ a:hover {
 .modal-container > .main > .modal-head > img.project-icon {
   width: 40px;
   height: 40px;
-  border-radius: 20px;
+  border: 2px solid #999999;
+  border-radius: 22px;
   margin: 14px auto;
   display: block;
 }
@@ -233,6 +245,23 @@ a:hover {
   letter-spacing: 0.5px;
   max-width: 420px;
   margin: 0 auto 30px;
+}
+.modal-container > .main > p.modal-header {
+  font-size: 16px;
+  font-weight: 400;
+  color: #999999;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.modal-container > .main > ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+.modal-container > .main > ul > li {
+  margin-bottom: 12px;
 }
 .modal-container > .main > .modal-gallery {
   max-width: 750px;
@@ -325,15 +354,15 @@ footer > p.footer > a {
     padding-bottom: 10px;
     float: none;
   }
-  .main > .home-project > .project-image {
+  .main > .home-project > a > .project-image {
     width: 100%;
     height: 120px;
   }
-  .main > .home-project > .project-image > .project-image-overlay {
+  .main > .home-project > a > .project-image > .project-image-overlay {
     opacity: 1;
     background-color: rgba(0, 0, 0, 0);
   }
-  .main > .home-project > .project-image > .project-image-overlay > a {
+  .main > .home-project > a > .project-image > .project-image-overlay > a {
     opacity: 1;
     color: #999999;
     top: 154%;
@@ -351,23 +380,153 @@ footer > p.footer > a {
     margin: 0 auto 30px;
   }
 }
-.modal-container#virtualtryon > .masthead {
-  background-image: url('');
+.modal-container#modal-virtualtryon > .masthead {
+  background-image: url('../img/virtualtryon-banner.png');
   background-size: cover;
   background-position: center;
 }
-.modal-container#virtualtryon > .main > .modal-gallery > .gallery-image#virtualtryona {
-  background-image: url('');
+.modal-container#modal-virtualtryon > .main > .modal-gallery > .gallery-image#image-virtualtryona {
+  background-image: url('../img/virtualtryon-gallerya.png');
   background-size: cover;
   background-position: center;
 }
-.modal-container#virtualtryon > .main > .modal-gallery > .gallery-image#virtualtryonb {
-  background-image: url('');
+.modal-container#modal-virtualtryon > .main > .modal-gallery > .gallery-image#image-virtualtryonb {
+  background-image: url('../img/virtualtryon-galleryb.png');
   background-size: cover;
   background-position: center;
 }
-.modal-container#virtualtryon > .main > .modal-gallery > .gallery-image#virtualtryonc {
-  background-image: url('');
+.modal-container#modal-virtualtryon > .main > .modal-gallery > .gallery-image#image-virtualtryonc {
+  background-image: url('../img/virtualtryon-galleryc.png');
+  background-size: cover;
+  background-position: center;
+}
+.main > .home-project > .project-image#virtualtryon {
+  background-image: url('../img/virtualtryon-project.png');
+  background-size: cover;
+  background-position: center;
+}
+.modal-container#modal-backwords > .masthead {
+  background-image: url('../img/backwords-banner.png');
+  background-size: cover;
+  background-position: center;
+}
+.modal-container#modal-backwords > .main > .modal-gallery > .gallery-image#image-backwordsa {
+  background-image: url('../img/backwords-gallerya.png');
+  background-size: cover;
+  background-position: center;
+}
+.modal-container#modal-backwords > .main > .modal-gallery > .gallery-image#image-backwordsb {
+  background-image: url('../img/backwords-galleryb.png');
+  background-size: cover;
+  background-position: center;
+}
+.modal-container#modal-backwords > .main > .modal-gallery > .gallery-image#image-backwordsc {
+  background-image: url('../img/backwords-galleryc.png');
+  background-size: cover;
+  background-position: center;
+}
+.main > .home-project > .project-image#backwords {
+  background-image: url('../img/backwords-project.png');
+  background-size: cover;
+  background-position: center;
+}
+.modal-container#modal-ww2timeline > .masthead {
+  background-image: url('../img/ww2timeline-banner.png');
+  background-size: cover;
+  background-position: center;
+}
+.modal-container#modal-ww2timeline > .main > .modal-gallery > .gallery-image#image-ww2timelinea {
+  background-image: url('../img/ww2timeline-gallerya.png');
+  background-size: cover;
+  background-position: center;
+}
+.modal-container#modal-ww2timeline > .main > .modal-gallery > .gallery-image#image-ww2timelineb {
+  background-image: url('../img/ww2timeline-galleryb.png');
+  background-size: cover;
+  background-position: center;
+}
+.modal-container#modal-ww2timeline > .main > .modal-gallery > .gallery-image#image-ww2timelinec {
+  background-image: url('../img/ww2timeline-galleryc.png');
+  background-size: cover;
+  background-position: center;
+}
+.main > .home-project > .project-image#ww2timeline {
+  background-image: url('../img/ww2timeline-project.png');
+  background-size: cover;
+  background-position: center;
+}
+.modal-container#modal-planetkungfu > .masthead {
+  background-image: url('../img/planetkungfu-banner.png');
+  background-size: cover;
+  background-position: center;
+}
+.modal-container#modal-planetkungfu > .main > .modal-gallery > .gallery-image#image-planetkungfua {
+  background-image: url('../img/planetkungfu-gallerya.png');
+  background-size: cover;
+  background-position: center;
+}
+.modal-container#modal-planetkungfu > .main > .modal-gallery > .gallery-image#image-planetkungfub {
+  background-image: url('../img/planetkungfu-galleryb.png');
+  background-size: cover;
+  background-position: center;
+}
+.modal-container#modal-planetkungfu > .main > .modal-gallery > .gallery-image#image-planetkungfuc {
+  background-image: url('../img/planetkungfu-galleryc.png');
+  background-size: cover;
+  background-position: center;
+}
+.main > .home-project > .project-image#planetkungfu {
+  background-image: url('../img/planetkungfu-project.png');
+  background-size: cover;
+  background-position: center;
+}
+.modal-container#modal-olympicgames > .masthead {
+  background-image: url('../img/olympicgames-banner.png');
+  background-size: cover;
+  background-position: center;
+}
+.modal-container#modal-olympicgames > .main > .modal-gallery > .gallery-image#image-olympicgamesa {
+  background-image: url('../img/olympicgames-gallerya.png');
+  background-size: cover;
+  background-position: center;
+}
+.modal-container#modal-olympicgames > .main > .modal-gallery > .gallery-image#image-olympicgamesb {
+  background-image: url('../img/olympicgames-galleryb.png');
+  background-size: cover;
+  background-position: center;
+}
+.modal-container#modal-olympicgames > .main > .modal-gallery > .gallery-image#image-olympicgamesc {
+  background-image: url('../img/olympicgames-galleryc.png');
+  background-size: cover;
+  background-position: center;
+}
+.main > .home-project > .project-image#olympicgames {
+  background-image: url('../img/olympicgames-project.png');
+  background-size: cover;
+  background-position: center;
+}
+.modal-container#modal-urbansprawl > .masthead {
+  background-image: url('../img/urbansprawl-banner.png');
+  background-size: cover;
+  background-position: center;
+}
+.modal-container#modal-urbansprawl > .main > .modal-gallery > .gallery-image#image-urbansprawla {
+  background-image: url('../img/urbansprawl-gallerya.png');
+  background-size: cover;
+  background-position: center;
+}
+.modal-container#modal-urbansprawl > .main > .modal-gallery > .gallery-image#image-urbansprawlb {
+  background-image: url('../img/urbansprawl-galleryb.png');
+  background-size: cover;
+  background-position: center;
+}
+.modal-container#modal-urbansprawl > .main > .modal-gallery > .gallery-image#image-urbansprawlc {
+  background-image: url('../img/urbansprawl-galleryc.png');
+  background-size: cover;
+  background-position: center;
+}
+.main > .home-project > .project-image#urbansprawl {
+  background-image: url('../img/urbansprawl-project.png');
   background-size: cover;
   background-position: center;
 }

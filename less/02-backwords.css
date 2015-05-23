@@ -1,0 +1,25 @@
+.modal-container#modal-backwords > .masthead {
+  background-image: url('../img/backwords-banner.png');
+  background-size: cover;
+  background-position: center;
+}
+.modal-container#modal-backwords > .main > .modal-gallery > .gallery-image#image-backwordsa {
+  background-image: url('../img/backwords-gallerya.png');
+  background-size: cover;
+  background-position: center;
+}
+.modal-container#modal-backwords > .main > .modal-gallery > .gallery-image#image-backwordsb {
+  background-image: url('../img/backwords-galleryb.png');
+  background-size: cover;
+  background-position: center;
+}
+.modal-container#modal-backwords > .main > .modal-gallery > .gallery-image#image-backwordsc {
+  background-image: url('../img/backwords-galleryc.png');
+  background-size: cover;
+  background-position: center;
+}
+.main > .home-project > .project-image#backwords {
+  background-image: url('../img/backwords-project.png');
+  background-size: cover;
+  background-position: center;
+}

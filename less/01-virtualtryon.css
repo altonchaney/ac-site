@@ -1,0 +1,25 @@
+.modal-container#modal-virtualtryon > .masthead {
+  background-image: url('../img/virtualtryon-banner.png');
+  background-size: cover;
+  background-position: center;
+}
+.modal-container#modal-virtualtryon > .main > .modal-gallery > .gallery-image#image-virtualtryona {
+  background-image: url('../img/virtualtryon-gallerya.png');
+  background-size: cover;
+  background-position: center;
+}
+.modal-container#modal-virtualtryon > .main > .modal-gallery > .gallery-image#image-virtualtryonb {
+  background-image: url('../img/virtualtryon-galleryb.png');
+  background-size: cover;
+  background-position: center;
+}
+.modal-container#modal-virtualtryon > .main > .modal-gallery > .gallery-image#image-virtualtryonc {
+  background-image: url('../img/virtualtryon-galleryc.png');
+  background-size: cover;
+  background-position: center;
+}
+.main > .home-project > .project-image#virtualtryon {
+  background-image: url('../img/virtualtryon-project.png');
+  background-size: cover;
+  background-position: center;
+}
