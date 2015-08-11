@@ -5,6 +5,8 @@ html(lang="en")
         meta(http-equiv="content-type", content="text/html; charset=utf-8")
         title Alton Chaney, Art + Design + Execution
         meta(name="description", content="Selected works from the mind and fingertips of Alton Chaney")
+        link(rel="shortcut icon", href="/img/favicon.ico")
+        link(rel="icon", type="image/x-icon")
         link(rel="stylesheet", href="css/main.css", media="all")
         script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js")
         script(src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js")
@@ -16,7 +18,7 @@ html(lang="en")
     body
         .navbar
             .navbar-container
-                .navbar-logo <!-- svg background -->
+                a.navbar-logo(href="index.html") <!-- svg background -->
                 .navbar-links
                     ul
                         li 
@@ -32,7 +34,7 @@ html(lang="en")
                             a(href="https://www.linkedin.com/in/altonchaney", target="_blank")
                                 img.social-icon(src="img/social-icon-linkedin.png")
                         li
-                            a(href="https://github.com/altonchaney", target="_blank")
+                            a(href="https://github.com/altonchaney/ac-site", target="_blank")
                                 img.social-icon(src="img/social-icon-github.png")
 
         .masthead.home
@@ -73,6 +75,13 @@ html(lang="en")
                         a#open-ww2timeline(href="#") Learn More »
                 .project-h2 An Interactive Webapp
                 .project-h1 WW2 Media Timeline
+                
+            .home-project.design
+                .project-image#scrubapp <!-- background image -->
+                    .project-image-overlay
+                        a#open-scrubapp(href="#") Learn More »
+                .project-h2 An Interactive Social Network
+                .project-h1 Scrub
             
             .home-project.art
                 .project-image#planetkungfu <!-- background image -->
@@ -80,6 +89,13 @@ html(lang="en")
                         a#open-planetkungfu(href="#") Learn More »
                 .project-h2 A 72-hour Unity Game
                 .project-h1 Planet Kung Fu
+                
+            .home-project.design
+                .project-image#tgpio <!-- background image -->
+                    .project-image-overlay
+                        a#open-tgpio(href="#") Learn More »
+                .project-h2 A Game Dev Hub
+                .project-h1 tgp.io
             
             .home-project.design
                 .project-image#olympicgames <!-- background image -->
@@ -97,15 +113,17 @@ html(lang="en")
             
             footer
                 p.footer.
-                    © 1989-2015 Alton Chaney | Made in <a href="#"><span class="tx">TX</span></a> with <a href="#" style="font-family: Arial;">&#9829;</a>
+                    © 1989-2015 Alton Chaney | Made in <span class="tx">ATX</span> with <span style="font-family: Arial;">&#9829;</span>
         
         include 01-virtualtryon.jade
         include 02-backwords.jade
         include 03-ww2timeline.jade
-        //include 04-tgpio.jade
+        include 04-tgpio.jade
+        //include 045-binoculario.jade
         include 05-planetkungfu.jade
         include 06-olympicgames.jade
         include 07-urbansprawl.jade
+        include 07-scrubapp.jade
         //include 08-socialtvinfographs.jade
         //include 09-gameoverride.jade
         //include 10-iconcollages.jade

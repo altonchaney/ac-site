@@ -8,35 +8,18 @@ $(document).ready(function() {
         });
     }
     
-    $('#open-virtualtryon').click(function(){ showModal('virtualtryon') });
-    $('#open-backwords').click(function(){ showModal('backwords') });
-    $('#open-ww2timeline').click(function(){ showModal('ww2timeline') });
-    $('#open-tgpio').click(function(){ showModal('tgpio') });
-    $('#open-planetkungfu').click(function(){ showModal('planetkungfu') });
-    $('#open-olympicgames').click(function(){ showModal('olympicgames') });
-    $('#open-urbansprawl').click(function(){ showModal('urbansprawl') });
-    $('#open-socialtvinfographs').click(function(){ showModal('socialtvinfographs') });
-    $('#open-gameoverride').click(function(){ showModal('gameoverride') });
-    $('#open-iconcollages').click(function(){ showModal('iconcollages') });
-    
-    $('#virtualtryon').click(function(){ showModal('virtualtryon') });
-    $('#backwords').click(function(){ showModal('backwords') });
-    $('#ww2timeline').click(function(){ showModal('ww2timeline') });
-    $('#tgpio').click(function(){ showModal('tgpio') });
-    $('#planetkungfu').click(function(){ showModal('planetkungfu') });
-    $('#olympicgames').click(function(){ showModal('olympicgames') });
-    $('#urbansprawl').click(function(){ showModal('urbansprawl') });
-    $('#socialtvinfographs').click(function(){ showModal('socialtvinfographs') });
-    $('#gameoverride').click(function(){ showModal('gameoverride') });
-    $('#iconcollages').click(function(){ showModal('iconcollages') });
+    $('.project-image').each(function(){ 
+    	$(this).click(function(){
+    		showModal($(this)[0].id)
+    	});
+		console.log($(this));
+    });
     
     $('.modal-close').click(function(){ 
     	$('.modal-container').fadeOut(300, function(){
 			$('.main.home').fadeIn(300);
         })
     });
-    
-    
     
     function filterProjects(type){
         var $projectType = $('.home-project.'+type);

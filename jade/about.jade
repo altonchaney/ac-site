@@ -3,9 +3,14 @@ html(lang="en")
     head
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="content-type", content="text/html; charset=utf-8")
+        title Alton Chaney, Art + Design + Execution
+        meta(name="description", content="Selected works from the mind and fingertips of Alton Chaney")
+        link(rel="shortcut icon", href="/img/favicon.ico")
+        link(rel="icon", type="image/x-icon")
         link(rel="stylesheet", href="css/main.css", media="all")
         script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js")
         script(src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js")
+        script(src="js/main.js")
         script(src="//use.typekit.net/vxq2qyv.js")
         script.
             try{Typekit.load();}catch(e){}
@@ -13,7 +18,7 @@ html(lang="en")
     body
         .navbar
             .navbar-container
-                .navbar-logo <!-- svg background -->
+                a.navbar-logo(href="index.html") <!-- svg background -->
                 .navbar-links
                     ul
                         li 
@@ -36,7 +41,7 @@ html(lang="en")
             .masthead.about
             .main
                 .modal-head
-                    img.project-icon(src="img/about-icon.png")
+                    img.project-icon(src="img/about-icon.png", style="margin-top:28px;")
                     h2 Dreamer, Artist, Maker
                     h1 An Introduction
                 p.
