@@ -2,7 +2,7 @@
 @color-lightgray: #999999;
 @color-darkgray: #333333;
 
-@font-sans: "omnes", "Helvetica Neue", Helvetica, Arial, Sans; //omnes-pro
+@font-sans: "omnes", "omnes-pro", "Helvetica Neue", Helvetica, Arial, Sans; //omnes-pro
 @font-serif: "clavo", Georgia, Times, Serif; //clavo
 @font-mono: Monaco;
 
@@ -15,7 +15,7 @@
 
 @font-elight: 200;
 @font-light: 300;
-@font-regular: 400;
+@font-regular: 500;
 @font-semibold: 600;
 
 body {
@@ -66,6 +66,7 @@ a {
                 > li {
                 	margin-left: 40px;
                 	float: left;
+                	margin-top: -6px;
                     > a {
                     	font-weight: @font-light;
                     	color: @color-gray;
@@ -151,7 +152,7 @@ a {
     		font-style: italic;
     		font-size: @font-size2;
     		text-align: center;
-    		margin: 30px 0 0;
+    		margin: 36px 0 0;
     		opacity: 0.4;
     	}
     }
@@ -202,10 +203,12 @@ a {
         	color: @color-lightgray;
         	text-transform: uppercase;
         	letter-spacing: 1px;
+        	margin-top: -8px;
         }
         > .project-h1 {
         	font-size: @font-size6;
         	font-weight: @font-regular;
+        	margin-top: -8px;
         }
     }
 }
@@ -261,7 +264,7 @@ a {
             > h1 {
             	font-size: @font-size6;
 				font-weight: @font-regular;
-				margin-top: 4px;
+				margin-top: -8px;
 				margin-bottom: 20px;
 				> a { 
 					color: @color-darkgray !important;
